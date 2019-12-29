@@ -35,10 +35,15 @@ That's it!
 # FAQ
 
 **Q: Why does the tab keep automatically unloading?**
-A: Some browsers automatically unload tabs and also some browser extensions (such as "The Great Suspender") may unload them. Make sure to pin the tab and if it still occurs, (on Google Chrome) all you need to do is to go onto "chrome://discards/", go onto the "Discards" tab, and toggle "Auto Discardable" on "Dashboard | DISBOARD: Discord Server List". Hope this helps any of you!
+
+A: Some browsers automatically unload tabs and also some browser extensions (such as "The Great Suspender") may unload them. Make sure to pin the tab and if it still occurs, all you need to do is to go onto `chrome://discards/`, go onto the "Discards" tab, and toggle "Auto Discardable" on `Dashboard | DISBOARD: Discord Server List`. Hope this helps!
+
+![chrome://discards/](https://i.imgur.com/vp8CDvZ.png)
 
 **Q: Why doesn't the timer correspond with the time left to bump?**
+
 A: This is to avoid being delisted of Disboard and is normal. It can be disabled by switching off Safety Mode in the extension popup.
 
 **Q: IT STILL DOESN'T WORK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???**
+
 A: Join the Discord for assistance and I will try my best to help https://discord.gg/7eUGycp :)
