@@ -4,7 +4,7 @@
 
 -> Join the Discord for assistance, updates and epicness (daily giveaways and more :O): https://discord.gg/7eUGycp <-
 
-**This extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more discord members in your server!
+**This extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more discord members in your server!**
 
 >How to use:
 >
