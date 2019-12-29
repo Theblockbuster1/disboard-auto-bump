@@ -1,20 +1,20 @@
 # Disboard Auto Bump
-Not against Discord's ToS!
+**Not against Discord's ToS!**
 
 
 -> Join the Discord for assistance, updates and epicness (daily giveaways and more :O): https://discord.gg/7eUGycp <-
 
-This extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more discord members in your server!
+**This extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more discord members in your server!
 
-How to use:
-
-1. Go onto https://disboard.org/dashboard/servers .
-
-2. Click on the 🅱️ icon to pick which server to bump in that tab.
-
-3. Keep it open or it will not work. TIP: Pin the tab! (Right Click > "Pin Tab")
-
-4. [Multibumping!] Optionally have multiple tabs opened for different servers!
+>How to use:
+>
+>1. Go onto https://disboard.org/dashboard/servers .
+>
+>2. Click on the 🅱️ icon to pick which server to bump in that tab.
+>
+>3. Keep it open or it will not work. TIP: Pin the tab! (Right Click > "Pin Tab")
+>
+>4. [Multibumping!] Optionally have multiple tabs opened for different servers!
 
 -----FAQ-----:
 
