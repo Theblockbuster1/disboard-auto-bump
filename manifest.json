@@ -1,0 +1,21 @@
+{
+    "name": "Disboard Auto Bump",
+    "version": "2.2.0",
+    "description": "Not against Discord's ToS!",
+    "manifest_version": 2,
+    "icons": {"128": "icon_128.png"},
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab", "storage", "webRequest", "webRequestBlocking" , "*://disboard.org/*"],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://disboard.org/*dashboard/servers"],
+          "js": ["sweetalert2.all.min.js", "jquery-3.4.1.min.js", "content.js"]
+        }
+      ]
+}
