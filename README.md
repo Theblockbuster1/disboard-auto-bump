@@ -4,7 +4,7 @@
 
 Join the Discord for assistance, updates and epicness (daily giveaways and more :O): https://discord.gg/7eUGycp
 
-**This Chrome Extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more discord members in your server!**
+**This Chrome Extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more members in your server!**
 
 # Install Instructions
 
@@ -43,6 +43,12 @@ A: Some browsers automatically unload tabs and also some browser extensions (suc
 **Q: Why doesn't the timer correspond with the time left to bump?**
 
 A: This is to avoid being delisted of Disboard and is normal. It can be disabled by switching off Safety Mode in the extension popup.
+
+**Q: Why do I get a message telling me that this is unsafe?**
+
+A: The warning "Disable developer mode extensions" is displayed in Chrome when you install non Chrome Web Store extensions in the browser. Read more and learn how to disable it [here](https://www.ghacks.net/2017/07/04/hide-chromes-disable-developer-mode-extensions-warning/). If you would like to continue using the extension then simply press 'Cancel' when you see this message.
+
+!["Disable devolper mode extensions"](https://i.stack.imgur.com/861MU.png)
 
 **Q: IT STILL DOESN'T WORK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???**
 
