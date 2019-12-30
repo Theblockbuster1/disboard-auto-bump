@@ -16,6 +16,8 @@ Until I decide to pay the dev licence fee, this will be the way to install the e
 
 2. Download (or clone) the repository and (if you downloaded) extract the folder into a directory.
 
+![Download button](https://i.imgur.com/Vg4znNP.png)
+
 3. Drag and drop the folder into `chrome://extensions/`.
 
 ![Drag and dropping](https://i.imgur.com/zg38IHc.png)
