@@ -6,6 +6,8 @@ Join the Discord for assistance, updates and epicness (daily giveaways and more 
 
 **This Chrome Extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more members in your server!**
 
+![Screenshot](https://i.imgur.com/HobG8Kc.png)
+
 # Install Instructions
 
 Until I decide to pay the dev licence fee, this will be the way to install the extension.
