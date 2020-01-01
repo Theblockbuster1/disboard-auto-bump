@@ -4,6 +4,11 @@
     "description": "Not against Discord's ToS!",
     "manifest_version": 2,
     "icons": {"128": "icon_128.png"},
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "disboardautobump@block.com"
+      }
+    },
     "browser_action": {
         "default_icon": "icon.png",
         "default_popup": "popup.html"
