@@ -42,13 +42,13 @@ That's it! (You may have to reinstall the add-on on restarts)
 
 # How to use
 
->1. Go onto https://disboard.org/dashboard/servers.
->
->2. Click on the 🅱️ icon to pick which server to bump in that tab.
->
->3. Keep it open or it will not work. TIP: Pin the tab! (Right Click > "Pin Tab")
->
->4. [Multibumping!] Optionally have multiple tabs opened for different servers!
+1. Go onto https://disboard.org/dashboard/servers.
+
+2. Click on the 🅱️ icon to pick which server to bump in that tab.
+
+3. Keep it open or it will not work. TIP: Pin the tab! (Right Click > "Pin Tab")
+
+4. [Multibumping!] Optionally have multiple tabs opened for different servers!
 
 # FAQ
 
@@ -60,13 +60,19 @@ A: Some browsers automatically unload tabs and also some browser extensions (suc
 
 **Q: Why doesn't the timer correspond with the time left to bump?**
 
-A: This is to avoid being delisted of Disboard and is normal. It can be disabled by switching off Safety Mode in the extension popup.
+A: This is to avoid being de-listed of Disboard and is normal. It can be disabled by switching off Safety Mode in the extension popup.
 
 **Q: Why do I get a message telling me that this is unsafe?**
 
 A: The warning "Disable developer mode extensions" is displayed in Chrome when you install non Chrome Web Store extensions in the browser. Read more and learn how to disable it [here](https://www.ghacks.net/2017/07/04/hide-chromes-disable-developer-mode-extensions-warning/). If you would like to continue using the extension then simply press 'Cancel' when you see this message.
 
-!["Disable devolper mode extensions"](https://i.stack.imgur.com/861MU.png)
+!["Disable developer mode extensions"](https://i.stack.imgur.com/861MU.png)
+
+**Q: Why do I get an error saying "Unrecognized manifest key 'browser_specific_settings'."**
+
+A: In Chrome, if you look into the errors of the extension, you may find this error. It is completely normal and the extension will still continue to function properly. The reason for this error is that `browser_specific_settings` is used for Firefox add-on support but Chrome doesn't recognize this.
+
+![Unrecognized manifest key 'browser_specific_settings'.](https://i.imgur.com/L1j0cEn.png)
 
 **Q: IT STILL DOESN'T WORK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???**
 
