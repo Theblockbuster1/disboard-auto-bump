@@ -4,27 +4,41 @@
 
 Join the Discord for assistance, updates and epicness (daily giveaways and more :O): https://discord.gg/7eUGycp
 
-**This Chrome Extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more members in your server!**
+**This Browser Extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more members in your server!**
 
 ![Screenshot](https://i.imgur.com/HobG8Kc.png)
 
-# Install Instructions
+# Install Instructions (Chrome)
 
 Until I decide to pay the dev licence fee, this will be the way to install the extension.
 
-1. Visit `chrome://extensions/` (copy this into the search bar) and enable Developer mode.
-
-![Developer mode switch](https://i.imgur.com/EHnZ384.png)
-
-2. Download (or clone) the repository and (if you downloaded) extract the folder into a directory.
+1. Download (or clone) the repository and (if you downloaded) extract the folder into a directory.
 
 ![Download button](https://i.imgur.com/Vg4znNP.png)
+
+2. Visit `chrome://extensions/` (copy this into the search bar) and enable Developer mode.
+
+![Developer mode switch](https://i.imgur.com/EHnZ384.png)
 
 3. Drag and drop the folder into `chrome://extensions/`.
 
 ![Drag and dropping](https://i.imgur.com/zg38IHc.png)
 
 That's it!
+
+# Install Instructions (Firefox)
+
+1. Download (or clone) the repository and (if you downloaded) extract the folder into a directory.
+
+![Download button](https://i.imgur.com/Vg4znNP.png)
+
+2. Visit `about:debugging#/runtime/this-firefox` (copy this into the search bar).
+
+3. Click on 'Load Temporary Add-on...' and locate the `manifest.json` file in the folder you extracted.
+
+![Load Temporary Add-on...](https://i.imgur.com/LFz5v7t.png)
+
+That's it! (You may have to reinstall the add-on on restarts)
 
 # How to use
 
@@ -40,7 +54,7 @@ That's it!
 
 **Q: Why does the tab keep automatically unloading?**
 
-A: Some browsers automatically unload tabs and also some browser extensions (such as "The Great Suspender") may unload them. Make sure to pin the tab and if it still occurs, all you need to do is to go onto `chrome://discards/`, go onto the "Discards" tab, and toggle "Auto Discardable" on `Dashboard | DISBOARD: Discord Server List`. Hope this helps!
+A: Some browsers automatically unload tabs and also some browser extensions (such as "The Great Suspender") may unload them. Make sure to pin the tab and if it still occurs (on Chrome), all you need to do is to go onto `chrome://discards/`, go onto the "Discards" tab, and toggle "Auto Discardable" on `Dashboard | DISBOARD: Discord Server List`. Hope this helps!
 
 ![chrome://discards/](https://i.imgur.com/vp8CDvZ.png)
 
