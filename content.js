@@ -33,6 +33,7 @@ Once you have opened the popup, please press 'OK'.`,
       )
     }
 
+setTimeout(function(){ // allows the bump button to load it's timer text (00:00:00) before checking if it should be bumped - a temporary and unreliable fix to the captcha popup problem but it works ¯\_(ツ)_/¯
     $("[href]").attr("target", "_blank");
 
     var d = new Date(),
@@ -204,4 +205,5 @@ Once you have opened the popup, please press 'OK'.`,
 
       timedCount();
     });
+},3000);
 });
