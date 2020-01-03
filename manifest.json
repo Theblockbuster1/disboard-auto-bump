@@ -1,6 +1,6 @@
 {
     "name": "Disboard Auto Bump",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "description": "Not against Discord's ToS!",
     "manifest_version": 2,
     "icons": {"128": "icon_128.png"},
@@ -13,7 +13,7 @@
         "default_icon": "icon.png",
         "default_popup": "popup.html"
     },
-    "permissions": ["activeTab", "storage", "webRequest", "webRequestBlocking" , "*://disboard.org/*"],
+    "permissions": ["activeTab", "storage", "webRequest", "webRequestBlocking", "notifications", "*://disboard.org/*"],
     "background": {
       "scripts": ["background.js"]
     },
