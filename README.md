@@ -64,9 +64,9 @@ A: This is to avoid being de-listed of Disboard and is normal. It can be disable
 
 **Q: Why do I get a message telling me that this is unsafe?**
 
-A: The warning "Disable developer mode extensions" is displayed in Chrome when you install non Chrome Web Store extensions in the browser. Read more and learn how to disable it [here](https://www.ghacks.net/2017/07/04/hide-chromes-disable-developer-mode-extensions-warning/). If you would like to continue using the extension then simply press 'Cancel' when you see this message.
+A: The warning "Disable developer mode extensions" is displayed in Chrome when you install non Chrome Web Store extensions in the browser. Read more and learn how to disable it [here](https://www.ghacks.net/2017/07/04/hide-chromes-disable-developer-mode-extensions-warning/). If you would like to continue using the extension then simply press 'X' when you see this message.
 
-!["Disable developer mode extensions"](https://i.stack.imgur.com/861MU.png)
+!["Disable developer mode extensions"](https://i.imgur.com/y2KiC8s.png)
 
 **Q: Why do I get an error saying "Unrecognized manifest key 'browser_specific_settings'."**
 
