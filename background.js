@@ -1,4 +1,4 @@
-var version = "3.2.0";
+var version = "3.3.0";
 
 function redirect(requestDetails) {
       return {
@@ -94,4 +94,24 @@ setInterval(function () {
 chrome.notifications.onClicked.addListener(function(id) {
   chrome.tabs.create({url: "https://github.com/Theblockbuster1/disboard-auto-bump"});
   chrome.notifications.clear(id);
+});
+
+//chrome.tabs.query({
+//  url: ["*://disboard.org/*dashboard/servers", "*://disboard.org/*dashboard/servers/"]
+//}, function(tabs) {
+//  tabs.forEach(tab => {
+//    chrome.tabs.update(tab.id,{autoDiscardable:false});
+//  });
+//});
+
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+  if (changeInfo.discarded == true) chrome.notifications.create('', {
+    title: 'Looks like the tab got discarded.',
+    message: "(that wasn't supposed to happen...) Return to the tab to resume.",
+    contextMessage: 'oops...',
+    iconUrl: '/disboard-auto-bump-logo.png',
+    requireInteraction: false,
+    type: 'basic'
+  });
+  if (changeInfo.autoDiscardable == true) chrome.tabs.update(tabId,{autoDiscardable:false});
 });
