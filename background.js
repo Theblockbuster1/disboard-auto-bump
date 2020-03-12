@@ -1,4 +1,4 @@
-var version = "3.3.1";
+var version = "3.3.2";
 
 function redirect(requestDetails) {
       return {
@@ -105,13 +105,5 @@ chrome.tabs.query({
 });
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-  if (changeInfo.discarded == true) chrome.notifications.create('', {
-    title: 'Looks like the tab got discarded.',
-    message: "(that wasn't supposed to happen...) Return to the tab to resume.",
-    contextMessage: 'oops...',
-    iconUrl: '/disboard-auto-bump-logo.png',
-    requireInteraction: false,
-    type: 'basic'
-  });
   if (changeInfo.autoDiscardable == true) chrome.tabs.update(tabId,{autoDiscardable:false});
 });
