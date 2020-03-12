@@ -1,4 +1,4 @@
-# Disboard Auto Bump [3.3.0]
+# Disboard Auto Bump [3.3.1]
 **Not against Discord's ToS!**
 
 
