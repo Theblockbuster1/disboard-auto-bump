@@ -1,4 +1,4 @@
-var version = "3.3.2";
+var version = "3.3.3";
 
 function redirect(requestDetails) {
       return {
@@ -104,6 +104,8 @@ chrome.tabs.query({
   });
 });
 
-chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+chrome.tabs.onUpdated.addListener({
+  url: ["*://disboard.org/*dashboard/servers", "*://disboard.org/*dashboard/servers/"]
+}, function(tabId, changeInfo, tab) {
   if (changeInfo.autoDiscardable == true) chrome.tabs.update(tabId,{autoDiscardable:false});
 });
