@@ -162,19 +162,17 @@ setTimeout(function(){ // allows the bump button to load it's timer text (00:00:
           w = new Worker(URL.createObjectURL(new Blob(['('+fn+')()'])));
         }
         w.onmessage = function(event) {
-          if (isNaN(grabbedmin) && ID) {
-            bump()
-            w.terminate();
-          }
-          if ($("[href='/server/bump/" + ID + "']").text().includes("Bump")) {
-            bump()
-            w.terminate();
-          }
           var numberwow = event.data - safety
           var numberwoah = Number(grabbedmin) - numberwow
           var numbeee = numberwoah.toString()
           document.getElementById("bumpcount").innerHTML = "Autobumper Enabled: " + numbeee.toHHMMSS();
-          if (numberwow == grabbedmin) {
+          if (isNaN(grabbedmin) && ID) {
+            bump()
+            w.terminate();
+          } else if ($("[href='/server/bump/" + ID + "']").text().includes("Bump")) {
+            bump()
+            w.terminate();
+          } else if (numberwow == grabbedmin) {
             bump()
             w.terminate();
           }
