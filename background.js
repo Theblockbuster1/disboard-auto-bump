@@ -1,4 +1,4 @@
-var version = "3.3.5";
+var version = "3.3.6";
 
 function redirect(requestDetails) {
       return {

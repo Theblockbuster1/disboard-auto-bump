@@ -1,3 +1,4 @@
+$("head").append(`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css">`);
 chrome.storage.sync.get(['safetymode'], function(data) {
     const safetymode = data.safetymode;
     console.log("Is Safety Mode enabled?: " + safetymode);
