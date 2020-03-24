@@ -1,6 +1,9 @@
 # Disboard Auto Bump [3.3.6]
-**Not against Discord's ToS!**
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=THEY26JGSUF7Q">
+  <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="200" />
+</a>
 
+**Not against Discord's ToS!**
 
 Join the Discord for assistance, updates and epicness (daily giveaways and more :O): https://discord.gg/7eUGycp
 
@@ -71,3 +74,7 @@ A: In Chrome, if you look into the errors of the extension, you may find this er
 **Q: IT STILL DOESN'T WORK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???**
 
 A: Join the Discord for assistance and I will try my best to help https://discord.gg/7eUGycp :)
+
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=THEY26JGSUF7Q">
+  <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="200" />
+</a>
