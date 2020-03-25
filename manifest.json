@@ -1,6 +1,6 @@
 {
     "name": "Disboard Auto Bump",
-    "version": "3.3.7",
+    "version": "3.3.8",
     "description": "Not against Discord's ToS!",
     "manifest_version": 2,
     "icons": {"128": "icon_128.png"},
@@ -21,7 +21,7 @@
     "content_scripts": [
         {
           "matches": ["*://disboard.org/*dashboard/servers", "*://disboard.org/*dashboard/servers/"],
-          "js": ["sweetalert2.all.min.js", "jquery-3.4.1.min.js", "content.js"]
+          "js": ["libs/sweetalert2.all.min.js", "libs/jquery-3.4.1.min.js", "content.js"]
         }, {
           "run_at": "document_start",
           "matches": ["*://disboard.org/server/recaptcha-bump*"],

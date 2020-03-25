@@ -1,4 +1,4 @@
-var version = "3.3.7";
+var version = "3.3.8";
 
 document.title = "Disboard Auto Bump " + version;
 document.querySelector('.version').innerHTML = '(' + version + ')';
@@ -6,6 +6,9 @@ document.querySelector('.version').innerHTML = '(' + version + ')';
 var enabled = true;
 var myButton = document.getElementById('toggle');
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 
 chrome.storage.sync.get(['safetymode'], function(data) {
     if (data.safetymode == undefined) {

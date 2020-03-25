@@ -5,6 +5,10 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Disboard Auto Bump</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='libs/jquery-3.4.1.min.js'></script>
+    <script src='libs/popper.min.js'></script>
+    <script src='libs/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="libs/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <style>
@@ -151,46 +155,6 @@
         .form-switch input:checked + i::after {
             transform: translate3d(22px, 2px, 0);
         }
-
-        /* --------- Tooltip Styles ---------- */
-
-        .flex{
-            position: relative;
-        }
-
-        .flex::before, .flex::after{
-            position: absolute;
-            left: 50%;
-            opacity: 0;
-            transition: all ease 0.3s;
-        }
-
-        .flex::before{
-            content: "";
-            border-width: 10px 8px 0 8px;
-            border-style: solid;
-            border-color: rgba(0,0,0,0.8) transparent transparent transparent;
-            top: -20px;
-            margin-left: -18px;
-        }
-
-        .flex::after{
-            content: attr(data-tooltip);
-            background: rgba(0,0,0,0.8);
-            top: -20px;
-            transform: translateY(-100%);
-            font-size: 14px;
-            margin-left: -50px;
-            width: 50px;
-            border-radius: 10px;
-            color: #eee;
-            padding: 14px;
-            text-align: center;
-        }
-
-        .flex:hover::before, .flex:hover::after{
-            opacity: 1;
-        }
     </style>
 </head>
 <body>
@@ -218,35 +182,35 @@
     </div>
     <div class="modal-icons">
         <div class="flex-container">
-            <div data-tooltip="Website" class="flex">
+            <div class="flex">
                 <a href="https://bblok.tech/" target="_blank">
-                    <i class="fa fa-globe"></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Website" class="fa fa-globe"></i>
                 </a>
             </div>
 
-            <div data-tooltip="YouTube" class="flex">
+            <div class="flex">
                 <a href="http://youtube.bblok.tech/" target="_blank">
-                    <i class="fab fa-youtube"></i>
+                    <i data-toggle="tooltip" data-placement="top" title="YouTube" class="fab fa-youtube"></i>
                 </a>
             </div>
-            <div data-tooltip="Twitter" class="flex">
+            <div class="flex">
                 <a href="http://twitter.bblok.tech/" target="_blank">
-                    <i class="fab fa-twitter"></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Twitter" class="fab fa-twitter"></i>
                 </a>
             </div>
-            <div data-tooltip="Discord" class="flex">
+            <div class="flex">
                 <a href="http://discord.bblok.tech/" target="_blank">
-                    <i class="fab fa-discord"></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Discord" class="fab fa-discord"></i>
                 </a>
             </div>
-            <div data-tooltip="Github" class="flex">
+            <div class="flex">
                 <a href="https://github.com/Theblockbuster1" target="_blank">
-                    <i class="fab fa-github"></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Github" class="fab fa-github"></i>
                 </a>
             </div>
-            <div data-tooltip="Support the dev!" class="flex">
+            <div class="flex">
                 <a href="http://donate.bblok.tech/" target="_blank">
-                    <i class="fas fa-money-bill-alt"></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Support the dev!" class="fas fa-money-bill-alt"></i>
                 </a>
             </div>
     </div>
