@@ -1,7 +1,9 @@
-# Disboard Auto Bump [3.3.8]
+# Disboard Auto Bump [3.4.0]
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=THEY26JGSUF7Q">
   <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="200" />
 </a>
+
+###### *By using this extension, you understand that your server could get banned off Disboard. Use this at your own risk.*
 
 **Not against Discord's ToS!**
 

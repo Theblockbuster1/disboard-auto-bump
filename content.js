@@ -3,12 +3,19 @@ chrome.storage.sync.get(['safetymode'], function(data) {
     const safetymode = data.safetymode;
     console.log("Is Safety Mode enabled?: " + safetymode);
     if (safetymode == undefined) {
+      Swal.fire({
+        title: 'DISCLAIMER',
+        html: `By clicking 'I agree', you understand that your server could get banned off Disboard if you use this extension. Use this at your own risk.<br><br>Any questions? Join the <a href="http://discord.bblok.tech">Support Discord</a>.`,
+        icon: 'warning',
+        confirmButtonText: '<b>I agree</b>'
+      }).then(() => {
         Swal.fire(
           'Hey!',
           `Please open the extension popup (by clicking on the extension icon) at least once before using this extension.
 Once you have opened the popup, please press 'OK'.`,
           'warning'
         ).then((result) => {window.location = window.location});
+      });
     };
 
     function defineTabID(ServerID)
