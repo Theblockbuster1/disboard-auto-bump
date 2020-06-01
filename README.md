@@ -11,7 +11,7 @@ Join the Discord for assistance, updates and epicness (daily giveaways and more 
 
 **This Browser Extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more members in your server!**
 
-![Screenshot](https://i.imgur.com/HobG8Kc.png)
+![Screenshot](https://i.imgur.com/geTxMkp.png)
 
 # Install Instructions (Chrome)
 
