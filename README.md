@@ -19,7 +19,7 @@ Until I decide to pay the dev licence fee, this will be the way to install the e
 
 1. Download (or clone) the repository and (if you downloaded) extract the folder into a directory.
 
-![Download button](https://i.imgur.com/Vg4znNP.png)
+![Download button](https://i.imgur.com/4LxWWS2.png)
 
 2. Visit `chrome://extensions/` (copy this into the search bar) and enable Developer mode.
 
@@ -35,7 +35,7 @@ That's it!
 
 1. Download (or clone) the repository and (if you downloaded) extract the folder into a directory.
 
-![Download button](https://i.imgur.com/Vg4znNP.png)
+![Download button](https://i.imgur.com/4LxWWS2.png)
 
 2. Visit `about:debugging#/runtime/this-firefox` (copy this into the search bar).
 
