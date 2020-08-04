@@ -1,4 +1,4 @@
-var version = "3.4.0";
+var version = "3.4.1";
 
 document.title = "Disboard Auto Bump " + version;
 document.querySelector('.version').innerHTML = '(' + version + ')';

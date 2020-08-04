@@ -1,4 +1,4 @@
-var version = "3.4.0";
+var version = "3.4.1";
 
 function redirect(requestDetails) {
       return {
@@ -36,15 +36,11 @@ function compareVer(a, b) // https://stackoverflow.com/a/53387532/11037661
     return 0;
 };
 
-chrome.runtime.onInstalled.addListener((details) => {
-  chrome.storage.sync.get(['safetymode'], function(data) {
-    if (data.safetymode == undefined) {
-        chrome.storage.sync.set({safetymode:enabled});
-    };
-  });
+function checkUpdates(){
   fetch('https://raw.githubusercontent.com/Theblockbuster1/disboard-auto-bump/master/manifest.json', {mode: 'cors'})
   .then(function(response) {
-    return response.text();
+    if (response.ok) return response.text()
+    else throw response.status+' - '+response.statusText
   })
   .then(function(text) {
       if(compareVer(JSON.parse(text).version, version) == 1) {
@@ -56,38 +52,25 @@ chrome.runtime.onInstalled.addListener((details) => {
           requireInteraction: true,
           type: 'basic'
         });
-      };
+      }
   })
   .catch(function(error) {
-    console.error('Request failed', error)
+    console.error('An error occured while checking for update: '+error);
   });
+}
+
+chrome.runtime.onInstalled.addListener((details) => {
+  chrome.storage.sync.get(['safetymode'], function(data) {
+    if (data.safetymode == undefined) {
+        chrome.storage.sync.set({safetymode:enabled});
+    };
+  });
+  checkUpdates();
 });
-
-
 
 setInterval(function () {
   chrome.storage.sync.get(['updates'], function(data) {
-    if (data.updates == true) {
-      fetch('https://raw.githubusercontent.com/Theblockbuster1/disboard-auto-bump/master/manifest.json', {mode: 'cors'})
-      .then(function(response) {
-        return response.text();
-      })
-      .then(function(text) {
-          if(compareVer(JSON.parse(text).version, version) == 1) {
-            chrome.notifications.create('', {
-              title: 'Update available!',
-              message: 'Click here to update.',
-              contextMessage: 'https://github.com/Theblockbuster1/disboard-auto-bump',
-              iconUrl: '/disboard-auto-bump-logo.png',
-              requireInteraction: true,
-              type: 'basic'
-            });
-          };
-      })
-      .catch(function(error) {
-        console.error('Request failed', error)
-      });
-    };
+    if (data.updates == true) checkUpdates();
   });
 }, 21600000);
 
