@@ -1,4 +1,4 @@
-# Disboard Auto Bump [3.4.1]
+# Disboard Auto Bump [3.4.2]
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=THEY26JGSUF7Q">
   <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="200" />
 </a>
@@ -6,8 +6,6 @@
 ###### *By using this extension, you understand that your server could get banned off Disboard. Use this at your own risk.*
 
 **Not against Discord's ToS!**
-
-Join the Discord for assistance, updates and epicness (daily giveaways and more :O): https://discord.gg/7eUGycp
 
 **This Browser Extension simply auto-bumps your Discord server on Disboard. Useful for easily gaining more members in your server!**
 
@@ -75,7 +73,7 @@ A: In Chrome, if you look into the errors of the extension, you may find this er
 
 **Q: IT STILL DOESN'T WORK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???**
 
-A: Join the Discord for assistance and I will try my best to help https://discord.gg/7eUGycp :)
+A: Feel free to open an [issue](https://github.com/Theblockbuster1/disboard-auto-bump/issues).
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=THEY26JGSUF7Q">
   <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="200" />

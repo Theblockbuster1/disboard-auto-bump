@@ -5,7 +5,7 @@ chrome.storage.sync.get(['safetymode'], function(data) {
     if (safetymode == undefined) {
       Swal.fire({
         title: 'DISCLAIMER',
-        html: `By clicking 'I agree', you understand that your server could get banned off Disboard if you use this extension. Use this at your own risk.<br><br>Any questions? Join the <a href="http://discord.bblok.tech">Support Discord</a>.`,
+        html: `By clicking 'I agree', you understand that your server could get banned off Disboard if you use this extension. Use this at your own risk.`,
         icon: 'warning',
         confirmButtonText: '<b>I agree</b>'
       }).then(() => {
