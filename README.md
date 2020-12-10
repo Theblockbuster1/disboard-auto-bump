@@ -73,7 +73,7 @@ A: In Chrome, if you look into the errors of the extension, you may find this er
 
 **Q: IT STILL DOESN'T WORK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???**
 
-A: Feel free to open an [issue](https://github.com/Theblockbuster1/disboard-auto-bump/issues?q=is%3Aissue).
+A: Feel free to open an [issue](https://github.com/Theblockbuster1/disboard-auto-bump/issues?q=is%3Aissue) if the existing ones don't solve your problem. Also you can [chat with us here](https://github.com/Theblockbuster1/disboard-auto-bump/discussions/8)!
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=THEY26JGSUF7Q">
   <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="200" />
