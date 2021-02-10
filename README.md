@@ -55,6 +55,10 @@ That's it! (You may have to reinstall the add-on on restarts)
 
 # FAQ
 
+**Q: Why does the extension randomly freeze or not bump?**
+
+A: A work around to this issue (mentioned in [#4](https://github.com/Theblockbuster1/disboard-auto-bump/issues/4#issuecomment-680121784)) is to install [this auto refreshing extension](https://chrome.google.com/webstore/detail/tab-auto-reloader/knnahnemielbnanghaphjgheamgcjjcb) and run it along side.
+
 **Q: Why doesn't the timer correspond with the time left to bump?**
 
 A: This is to avoid being de-listed of Disboard and is normal. It can be disabled by switching off Safety Mode in the extension popup.
