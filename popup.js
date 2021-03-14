@@ -75,7 +75,7 @@ myButtontwo.onclick = () => {
                 title: 'Update available!',
                 message: 'Click here to update.',
                 contextMessage: 'https://github.com/Theblockbuster1/disboard-auto-bump',
-                iconUrl: '/disboard-auto-bump-logo.png',
+                iconUrl: '/images/disboard-auto-bump-logo.png',
                 requireInteraction: true,
                 type: 'basic'
               });

@@ -14,21 +14,19 @@ chrome.storage.sync.get(['safetymode'], function(data) {
           `Please open the extension popup (by clicking on the extension icon) at least once before using this extension.
 Once you have opened the popup, please press 'OK'.`,
           'warning'
-        ).then((result) => {window.location = window.location});
+        ).then(() => {window.location = window.location});
       });
     };
 
-    function defineTabID(ServerID)
-        {
+    function defineTabID(ServerID) {
         var iPageTabID = sessionStorage["tabID"];
-        if (iPageTabID != ServerID)
-            {
-            var iLocalTabID = localStorage["tabID"];
+        if (iPageTabID != ServerID) {
+            //var iLocalTabID = localStorage["tabID"];
             var iPageTabID = ServerID;
             localStorage["tabID"] = iPageTabID;
             sessionStorage["tabID"] = iPageTabID;
-            }
         }
+    }
 
     var ID = sessionStorage.getItem("tabID");
 
@@ -75,7 +73,7 @@ setTimeout(function(){ // allows the bump button to load it's timer text (00:00:
     });
 
     if (safetymode == true) {
-        var safety = Math.floor(Math.random() * 3601);
+        var safety = Math.floor(Math.random() * 1801);
     }
     else {
         safety = 0;
@@ -154,6 +152,7 @@ setTimeout(function(){ // allows the bump button to load it's timer text (00:00:
     };
 
     String.prototype.toHHMMSS = function () {
+        if (isNaN(this)) return '--:--:--';
         var sec_num = parseInt(this, 10);
         var hours = Math.floor(sec_num / 3600);
         var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
@@ -171,17 +170,16 @@ setTimeout(function(){ // allows the bump button to load it's timer text (00:00:
           w = new Worker(URL.createObjectURL(new Blob(['('+fn+')()'])));
         }
         w.onmessage = function(event) {
-          var numberwow = event.data - safety
-          var numberwoah = Number(grabbedmin) - numberwow
-          var numbeee = numberwoah.toString()
-          document.getElementById("bumpcount").innerHTML = "Autobumper Enabled: " + numbeee.toHHMMSS();
+          var numberwow = event.data - safety;
+          var numberwoah = Number(grabbedmin) - numberwow;
+          document.getElementById("bumpcount").innerHTML = "Autobumper Enabled: " + numberwoah.toString().toHHMMSS();
           if (isNaN(grabbedmin) && ID) {
             bump()
             w.terminate();
-          } else if ($("[href='" + lang + "/server/bump/" + ID + "']").text().includes("Bump")) {
+          } else if (numberwow == grabbedmin) {
             bump()
             w.terminate();
-          } else if (numberwow == grabbedmin) {
+          } else if (isNaN(numberwoah)) {
             bump()
             w.terminate();
           }
