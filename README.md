@@ -1,4 +1,4 @@
-# Disboard Auto Bump [3.4.3]
+# Disboard Auto Bump [3.5.0]
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=THEY26JGSUF7Q">
   <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="200" />
 </a>
