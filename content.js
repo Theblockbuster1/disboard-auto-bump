@@ -28,7 +28,7 @@ Once you have opened the popup, please press 'OK'.`,
         }
     }
 
-    var ID = sessionStorage.getItem("tabID") || localStorage.getItem("tabID");
+    var ID = sessionStorage.getItem("tabID");
 
     if (!ID) {
       Swal.fire(
