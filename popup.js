@@ -1,4 +1,4 @@
-var version = "3.7.2";
+var version = "3.7.2-hash1";
 
 document.title = "Disboard Auto Bump " + version;
 document.querySelector('.version').innerHTML = '(' + version + ')';

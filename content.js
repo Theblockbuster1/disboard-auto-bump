@@ -14,21 +14,15 @@ chrome.storage.sync.get(['safetymode'], function(data) {
           `Please open the extension popup (by clicking on the extension icon) at least once before using this extension.
 Once you have opened the popup, please press 'OK'.`,
           'warning'
-        ).then(() => {window.location = window.location});
+        ).then(() => {location.reload()});
       });
     };
 
     function defineTabID(ServerID) {
-        var iPageTabID = sessionStorage["tabID"];
-        if (iPageTabID != ServerID) {
-            //var iLocalTabID = localStorage["tabID"];
-            var iPageTabID = ServerID;
-            localStorage["tabID"] = iPageTabID;
-            sessionStorage["tabID"] = iPageTabID;
-        }
+        location.hash = '#' + ServerID;
     }
 
-    var ID = sessionStorage.getItem("tabID");
+    var ID = location.hash.substring(1);
 
     if (!ID) {
       Swal.fire(
@@ -69,7 +63,7 @@ setTimeout(function(){ // allows the bump button to load it's timer text (00:00:
     $(document).on("click", "#pick", function () {
         $(this).attr("id", "transferring");
         defineTabID($(`#transferring ~ [href^="${lang}/server/bump/"]`).attr("href").replace(RegExp(`${lang}/server/bump/`, "g"), ''));
-        window.location = window.location;
+        location.reload();
     });
 
     if (safetymode == true) {

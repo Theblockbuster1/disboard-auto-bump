@@ -1,3 +1,1 @@
-localStorage.removeItem("tabID");
-sessionStorage.removeItem("tabID");
-window.location = window.location;
+window.location = window.location.href.split('#')[0];
