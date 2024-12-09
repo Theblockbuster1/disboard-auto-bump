@@ -1,4 +1,4 @@
-# Disboard Auto Bump [3.8.0]
+# Disboard Auto Bump [3.9.0]
 
 ###### *By using this extension, you understand that your server could get banned off Disboard. Use this at your own risk.*
 

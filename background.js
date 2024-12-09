@@ -1,4 +1,4 @@
-var version = "3.8.0";
+var version = "3.9.0";
 
 chrome.contextMenus.create({
   title: "Stop auto-bumping this tab",
